@@ -52,9 +52,23 @@ h1 {
   bottom: 0;
 }
 
+.top-menu__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
 .top-menu__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.top-menu__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
 }/*# sourceMappingURL=style.css.map */

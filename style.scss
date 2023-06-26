@@ -52,4 +52,9 @@ h1 {font-weight: 500;font-size: $h1;}
         top: 0; left: 0; right: 0; bottom: 0;
     }
 }
-.top-menu__list {@include flex(space-between, center);}
+
+.top-menu{
+    &__items {@include flex(space-between, center); gap: 80px;}
+    &__list {@include flex(space-between, center);}
+    &__icons {@include flex(space-between, center); gap: 35px;}
+}
