@@ -16,6 +16,13 @@
   bottom: 0;
 }
 
+.top-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 *,
 *::before,
 *::after {
