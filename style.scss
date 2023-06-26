@@ -14,52 +14,29 @@ $container: 1680px;
 $mc: 0 auto;
 
 // mixin
-@mixin flex($jc, $ai) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: $jc;
-    align-items: $ai;
-}
+@mixin flex($jc, $ai){display: flex;flex-wrap: wrap;justify-content: $jc;align-items: $ai;}
 
-// reset
+//---------------------------
+//  С Б Р О С   С Т И Л Е Й 
+//---------------------------
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+*,*::before,*::after {box-sizing: border-box;margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;color: white;}
+body{font-family: 'Montserrat', sans-serif;background-color: $bg;color: $white;}
 
-ul {
-    list-style: none;
-}
+//-------------
+//  О Б Щ Е Е  
+//-------------
 
-a {
-    text-decoration: none;
-    color: white;
-}
+h1 {font-weight: 500;font-size: $h1;}
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: $bg;
-    color: $white;
-}
+.wrapper{max-width: $wrap;margin: $mc;}
+.container{max-width: $container;margin: $mc;}
 
-h1 {
-    font-weight: 500;
-    font-size: $h1;
-}
-
-.wrapper {
-    max-width: $wrap;
-    margin: $mc;
-}
-
-.container {
-    max-width: $container;
-    margin: $mc;
-}
+//----------------------------------
+//  Г Л А В Н А Я  С Т Р А Н И Ц А  
+//----------------------------------
 
 .main {
     min-height: 1080px;
@@ -75,7 +52,4 @@ h1 {
         top: 0; left: 0; right: 0; bottom: 0;
     }
 }
-
-.top-menu__list {
-    @include flex(space-between, center);
-}
+.top-menu__list {@include flex(space-between, center);}
