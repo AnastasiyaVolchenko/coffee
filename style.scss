@@ -57,7 +57,17 @@ h1 {font-weight: 500;font-size: $h1;}
     }
     &__btn {
         font-size: $h4;
+        border: solid $white 1px;
+        width: 200px; height: 80px;
+        display: inline-flex; justify-content: center; align-items: center; margin-top: 70px;
     }
+}
+
+.main__btn a:hover {
+    color: $black;
+    background: $white;
+    width: 200px; height: 80px; display: inline-flex; justify-content: center; align-items: center;
+    transition: all 0.2s ease;
 }
 
 .top-menu{
