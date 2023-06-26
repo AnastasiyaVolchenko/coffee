@@ -2,9 +2,36 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #070707;
+  color: #ffffff;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

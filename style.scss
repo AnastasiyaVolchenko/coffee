@@ -12,10 +12,30 @@ $white: #ffffff;
 $bg: #070707;
 $secong_bg: #0F0F0F;
 $gray: rgba(255, 255, 255, 0.5);
+$h1: 64px;
+$wrap: 1920px;
+$container: 1680px;
+$mc: 0 auto;
 
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $bg;
+    color: $white;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: $h1;
+}
+
+.wrapper {
+    max-width: $wrap;
+    margin: $mc;
+}
+
+.container {
+    max-width: $container;
+    margin: $mc;
 }
 
 // h1 {
