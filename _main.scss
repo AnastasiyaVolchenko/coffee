@@ -16,5 +16,6 @@
 }
 
 .top-menu__list {
-    @include flex(center, center);
+    justify-content: space-around;
+    gap: 40px;
 }
