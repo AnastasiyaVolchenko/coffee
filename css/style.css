@@ -51,7 +51,23 @@ h1 {
   right: 0;
   bottom: 0;
 }
+.main__container-center {
+  position: relative;
+  top: 25%;
+}
+.main-text {
+  font-size: 24px;
+  max-width: 660px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.main__btn {
+  font-size: 24px;
+}
 
+.top-menu__item {
+  font-size: 24px;
+}
 .top-menu__items {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +80,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 }
 .top-menu__icons {
   display: flex;

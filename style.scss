@@ -7,6 +7,10 @@ $gray: rgba(255, 255, 255, 0.5);
 
 // sizes
 $h1: 64px;
+$h2: 40px;
+$h3: 32px;
+$h4: 24px;
+
 $wrap: 1920px;
 $container: 1680px;
 
@@ -39,22 +43,26 @@ h1 {font-weight: 500;font-size: $h1;}
 //----------------------------------
 
 .main {
-    min-height: 1080px;
-    position: relative;
-    &__bg {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
+    min-height: 1080px; position: relative;
+
+    &__bg {width: 100%;height: 100%;position: absolute;object-fit: cover;}
+    &__container {position: absolute;top: 0; left: 0; right: 0; bottom: 0;}
+    &__container-center {position: relative;top: 25%;}
+
+    &-text {
+        font-size: $h4;
+        max-width: 660px;
+        margin-top: 20px;
+        line-height: 40px;
     }
-    &__container {
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
+    &__btn {
+        font-size: $h4;
     }
 }
 
 .top-menu{
+    &__item {font-size: $h4;}
     &__items {@include flex(space-between, center); gap: 80px;}
-    &__list {@include flex(space-between, center);}
+    &__list {@include flex(space-between, center); margin-top: 30px;}
     &__icons {@include flex(space-between, center); gap: 35px;}
 }
